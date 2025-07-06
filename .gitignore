@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+
+
+.ipynb_checkpoints/
+
+
+.vscode/
+
+# Data and large files
+data/
+*.csv
+*.zip
+*.json
+*.parquet
