@@ -15,37 +15,37 @@ All three scripts accept the same CLI flags and produce the same four CSV report
 
 Dataset URL= https://drive.google.com/file/d/1Jq0fPb-tq76Ee_RtM58fT0_M3o-JDBwe/view?usp=sharing
 
-## 2. Quick start
+## 2 . Quick start
 ```bash
-# 1 · clone repo & enter folder
+#1 · clone repo & enter folder
 git clone https://github.com/<your-handle>/Task_04_Descriptive_Stats.git
 cd Task_04_Descriptive_Stats
 
-# 2 · create & activate virtual-env
+#2 · create & activate virtual-env
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt 
 
-# activate virtual environment first
+activate virtual environment first
 python pandas_stats.py   data/your_dataset.csv
 python polars_stats.py   data/your_dataset.csv
 python pure_python_stats.py data/your_dataset.csv
 
-# 3 · drop raw CSVs into data/
-#    (they’re excluded from version control)
+#3 · drop raw CSVs into data/
+(they’re excluded from version control)
 
-# 4 · run any engine …
+#4 · run any engine …
 
-## Twitter posts
+Twitter posts
 python pandas_stats.py      data/tw_posts.csv  --g1 month_year      --g2 month_year source
 python polars_stats.py      data/tw_posts.csv  --g1 month_year      --g2 month_year source
 python pure_python_stats.py data/tw_posts.csv  --g1 month_year      --g2 month_year source
 
-## Facebook ads
+Facebook ads
 python pandas_stats.py      data/fb_ads.csv    --g1 page_id         --g2 page_id ad_id
 …
 
-## 3. Performance comparison (runs on M2 MacBook Air)
+## 3 . Performance comparison (runs on M2 MacBook Air)## 2. Quick start
 
 | Dataset   | Engine | Runtime (s) |
 | --------- | ------ | ----------- |
@@ -59,7 +59,7 @@ python pandas_stats.py      data/fb_ads.csv    --g1 page_id         --g2 page_id
 | fb\_posts | Polars | 0.07        |
 | fb\_posts | Stdlib | 1.86        |
 
-## 4. Key Findings
+## 4 . Key Findings
 
 ### Performance take-aways  
 
@@ -82,7 +82,7 @@ FB Ads: Pages A, B, C account for 62 % of total spend; median CPC $0.52.
 FB Posts: Image posts outperform video by +28 % reactions on median.
 
 
-## 5. How it works
+## 5 . How it works
 
 CSV → DataFrame → 
     • numeric cols → count / mean / std / min / median / max + missing
@@ -90,7 +90,4 @@ CSV → DataFrame →
     • group-by G1  → same numeric stats
     • group-by G2  → same numeric stats
 → write four CSVs per engine
-
-
-
 
