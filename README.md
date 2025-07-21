@@ -44,11 +44,11 @@ python pure_python_stats.py data/tw_posts.csv  --g1 month_year      --g2 month_y
 
 Facebook ads
 python pandas_stats.py      data/fb_ads.csv    --g1 page_id         --g2 page_id ad_id
-…
+```
 
 ## 3 . Performance comparison (M2 MacBook Air)
 
-'''bash
+```bash
 
 | Dataset   | Engine | Runtime (s) |
 | --------- | ------ | ----------- |
@@ -61,7 +61,7 @@ python pandas_stats.py      data/fb_ads.csv    --g1 page_id         --g2 page_id
 | fb\_posts | Pandas | 0.68        |
 | fb\_posts | Polars | 0.07        |
 | fb\_posts | Stdlib | 1.86        |
-'''
+```
 
 ## 4 . Key findings
 
