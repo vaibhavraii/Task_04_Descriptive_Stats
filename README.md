@@ -46,7 +46,7 @@ Facebook ads
 python pandas_stats.py      data/fb_ads.csv    --g1 page_id         --g2 page_id ad_id
 …
 
-## 3 Performance comparison (M2 MacBook Air)
+## 3 . Performance comparison (M2 MacBook Air)
 
 '''bash
 
@@ -63,7 +63,7 @@ python pandas_stats.py      data/fb_ads.csv    --g1 page_id         --g2 page_id
 | fb\_posts | Stdlib | 1.86        |
 '''
 
-## 4 Key findings
+## 4 . Key findings
 
 ### Performance take-aways  
 
